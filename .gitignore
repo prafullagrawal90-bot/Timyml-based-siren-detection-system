@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Local datasets/audio
+data/audio/
+data/raw/
+*.wav
+*.mp3
+*.flac
+
+# Generated model/data artifacts
+*.keras
+*.h5
+*.tflite
+*.npy
+*.npz
+*.pkl
+
+# Generated reports
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

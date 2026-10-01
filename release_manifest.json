@@ -1,0 +1,28 @@
+{
+  "project": "GreenWave Audio AI & TinyML - Emergency Siren Detection",
+  "version": "1.0",
+  "target": "ESP32-S3",
+  "model": "DS-CNN",
+  "feature": "40-bin Log-Mel",
+  "input_shape": [
+    1,
+    40,
+    161,
+    1
+  ],
+  "classes": [
+    "NON_SIREN",
+    "SIREN"
+  ],
+  "validated": {
+    "keras_accuracy_percent": 96.5636,
+    "fp32_tflite_accuracy_percent": 96.5636,
+    "int8_tflite_accuracy_percent": 95.8763,
+    "int8_accuracy_change_percentage_points": 0.6873,
+    "fp32_tflite_size_kb": 25.59,
+    "int8_tflite_size_kb": 17.79,
+    "size_reduction_percent": 30.47,
+    "golden_vectors": 20
+  },
+  "hardware_status": "deployment preparation/handover; on-device measurements not documented as completed"
+}
